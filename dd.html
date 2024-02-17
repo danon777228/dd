@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Кликер что ли?</title>
+</head>
+<body>
+    <h1>Рил кликер</h1>
+    <p>жми жми жми!!!!!!!</p>
+    <button id="clickButton">нажми на меня</button>
+    <p>бонусы типо: <span id="count">0</span></p>
+
+    <script>
+        let count = 0;
+        const clickButton = document.getElementById('clickButton');
+        const countElem = document.getElementById('count');
+
+        clickButton.addEventListener('click', function(){
+            count++;
+            countElem.innerText = count;
+        });
+    </script>
+</body>
+</html>
